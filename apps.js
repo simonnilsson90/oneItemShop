@@ -53,7 +53,7 @@ fetch('https://fakestoreapi.com/products')
         <p id="image">  <img src='${shop.image}' width="300" >  </p>
         <h2 id="title" > ${shop.title} </h2>  
         <p class="classId" id="id"> Id: ${shop.id} </p>              
-        <p id="price"> Price: $${shop.price} </p>
+        <p class="price" id="price"> Price: $${shop.price} </p>
         <p id="category"> Category: ${shop.category} </p>
         <p id="description"> Description:  ${shop.description} </p>
        <p id="rate"> Rating: ${shop.rating.rate } </p>
