@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <h1 id="h1"></h1>
+</head>
+<body>
+    <div class="topnavCom">
+        <a class="activeCom" href="index.html"> Shop</a>
+        <a href="admin.html">Admin</a> 
+        <a href="cart.html">Kundvagn</a> 
+        
+    <br>
+    <h1>Admin</h1>
+
+    <h3>För att uppdatera orderuppgifter, skriv in nya kunduppgifter nedan och klicka sen på "ändra" vid önskad order.</h3>
+
+<label for="userName">Uppdatera namn</label>
+<br>
+<input type="text" id="userName" name="userName"> <br>
+<label for="userMail">Uppdatera E-mail</label>
+<br>
+<input type="text" id="userMail" name="userMail"> <br>
+
+<label for="userAdress"> Uppdatera adress</label>
+<br>
+<input type="text" id="userAdress" name="userAdress"> <br>
+
+<label for="fraktvillkor"> Uppdatera fraktvillkor:</label>
+    <select name="frakten" id="frakten">
+      <option value="Hemleverans(SEK 75)">Hemleverans(SEK 75)</option>
+      <option value="Avhämtning(SEK 0)">Avhämtning(SEK 0)</option>
+    </select> 
+        
+    <br><br>
+
+    <section id="section"></section>
+   
+    <script src="admin.js"></script>
+</body>
+</html>
