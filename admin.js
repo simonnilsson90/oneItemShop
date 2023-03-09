@@ -1,5 +1,6 @@
 "use strict";
 
+
 // HTML-element
 
 const buttonEl = document.getElementById("button");
