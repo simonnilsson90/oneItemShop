@@ -11,7 +11,7 @@ let userMailEl = document.getElementById("userMail");
 let userFraktEl = document.getElementById("frakten");
 
 //   Hämta data från Firebase och lägg upp
-fetch('https://firestore.googleapis.com/v1/projects/webbutik-28aae/databases/(default)/documents/fakeStore')
+fetch('https://firestore.googleapis.com/v1/projects/superstore-614d9/databases/(default)/documents/users')
 
 .then(res=>res.json())
 .then(data=>getOrders(data));

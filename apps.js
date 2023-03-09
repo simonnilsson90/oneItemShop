@@ -148,7 +148,7 @@ fetch('https://fakestoreapi.com/products')
                   
                 //Skicka fetch-anrop med POST-metoden
                 
-                 fetch("https://firestore.googleapis.com/v1/projects/webbutik-28aae/databases/(default)/documents/fakeStore",{
+                 fetch("https://firestore.googleapis.com/v1/projects/superstore-614d9/databases/(default)/documents/users",{
                   method: 'POST',
                   headers: {
                     'Content-Type': 'application/json'
