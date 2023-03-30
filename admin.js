@@ -10,6 +10,7 @@ let userAdressEl = document.getElementById("userAdress")
 let userNameEl = document.getElementById("userName");
 let userMailEl = document.getElementById("userMail");
 let userFraktEl = document.getElementById("frakten");
+let productidEl = document.getElementById("productId")
 
 //   Hämta data från Firebase och lägg upp
 fetch('https://firestore.googleapis.com/v1/projects/superstore-614d9/databases/(default)/documents/users')
@@ -17,6 +18,7 @@ fetch('https://firestore.googleapis.com/v1/projects/superstore-614d9/databases/(
 .then(res=>res.json())
 .then(data=>getOrders(data));
 // .then(json=>console.log(json))
+
 
 function getOrders(data) {
 
@@ -38,16 +40,8 @@ function getOrders(data) {
   <p>  Fraktvillkor: ${orders.fields.fraktvillkor.stringValue}  </p>
   <button  onclick="deleteUser('${orders.name}')">Radera order</button>
   <button  onclick="upDate('${orders.name}')">Ändra</button>
-  <br> <br>
-
-
-
- 
+  <br> <br> 
       <hr>
-  
-  
-  
-  
   
   `  
   }
@@ -64,13 +58,14 @@ function upDate (name){
   let userAdress = userAdressEl.value;
   let userMail =  userMailEl.value;
   let userFrakt = userFraktEl.value;
+  let productId = productidEl.value;
 
 
   const body = JSON.stringify(
       {
         "fields":  {
                 "idProduct": {
-                  "integerValue": "14"
+                  "integerValue": productId
                 },
                 "adress": {
                   "stringValue": userAdress
